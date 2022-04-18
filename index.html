@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+	<!-- You do not need to make any changes to this file, but
+	you should still review the tags to make sure that you
+	are familiar with them. -->
+
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to the favicon image -->
+	<link rel="icon" href="images/favicon.ico">
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&display=swap" rel="stylesheet">
+	<!-- Link to the stylesheet -->
+	<title>Bahar Shahmammadova</title>
+	<script src="https://kit.fontawesome.com/acc0889823.js" crossorigin="anonymous"></script>
+	<!-- test code -->
+	<!-- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-68YCFFS8YW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-68YCFFS8YW');
+</script>
+</head>
+
+<!-- All of the visible code in the page belongs in the body tag -->
+<body>
+	<a class = "skip" href="#main">Skip to Main Content</a>
+	<!-- Header is a sematic tag page that aids readability -->
+	<header>
+		<!-- Nav is a sematic tag page that aids accessibility -->
+		<nav>
+			<ul>
+				<li class="active"><a href = "index.html">Home</a></li>
+				<!-- Since I am on the index file I added class = action to the link to index. -->
+				<li><a href = "sky.html">Sky</a></li>
+				<li><a href = "urban.html">Urban</a></li>
+				<li><a href = "aboutme.html">About Me</a></li>
+			</ul>
+		</nav>
+		<!-- The h1 is a semantic tag that aids accessibility -->
+		<h1 id = "main" >Bahar Shahmammadova</h1>
+	</header>
+
+	<!-- <div id="aSide">
+        <model-viewer src="assets/scene.gltf" alt="3D MODEL LAMP" auto-rotate camera-controls ar ios-src="assets/scene.gltf"></model-viewer>
+    </div> -->
+
+
+
+
+	<!-- Every page should have a main tag for accessibility -->
+	<main>
+		<p>This is a website where I share my photography. I realy enjoy taking photos during my daily walks or my trips. I take a lot of urban photos, especially when I go on trips. I also like taking photos of the sky since it is always so different, no matter where I am and no matter how my environment is, sky is always exciting and different.  All of the photographs on this website were taken with my Iphone, thus they might not be the best quality. However, I enjoy the challenge of taking good photos with my phone instead of a fancy camera. It seems more natural and comfortable to me.</p>
+		<p>I am happy to see you here and hope you will enjoy looking through some of the photographs I took. There are two main categories, Urban and Sky photography. If you want to learn more about me and my UX related work, you can check my portfolio website. Feel free to reach out to me if you have questions about any of these photographs. You can find my contact information below. Please do not use any photoes without reaching our to me or citing me as the owner. </p>
+			<img src = "images/photography.jpg" alt = "Me taking a photo with my phone on Brooklyn Bridge" width="200" id ="me"/>
+	</main>
+
+
+	<!-- Footer is a sematic tag page that aids readability -->
+	<footer>
+		<form action="https://formspree.io/f/xayvbolp" method="POST">
+			<fieldset> 
+				<legend id="contact">Contact Form</legend>
+				<label for="subject_id"> Subject </label>
+				<textarea name="subject" id="subject_id"></textarea>
+				<label for="email_id"> Your Email </label>s
+				<input type="email" name="contact_email" id="email_id" required>
+				<label for="message_id"> Leave A Message </label>
+				<textarea name="message" id="message_id"></textarea>
+				<label for="name_id"> Your Name </label>
+				<textarea name="name" id="name_id"></textarea>
+				<input type="submit" value="Reach Out" >
+			</fieldset>
+		</form>
+		<a href="https://www.instagram.com/sh_bahar/" aria-label="Linkedin">
+			<i class="fa-brands fa-linkedin fa-lg"></i></a>
+		<a href="https://www.linkedin.com/feed/" aria-label="Instagram">
+			<i class="fa-brands fa-instagram fa-lg"></i></a>
+	<p>Bahar Shahmammadova &copy; 2022</p>
+	</footer>
+</body>
+</html>

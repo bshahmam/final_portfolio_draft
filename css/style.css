@@ -1,0 +1,230 @@
+
+body {
+	line-height: 2;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 15px;
+	padding: 15px;
+	text-decoration: none;
+	
+}
+
+.about_me{
+	background-image: url("../images/texture.jpg");
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+nav li{
+    padding: 5px;
+    margin: 4px;
+	text-decoration: none;
+    display: inline-block;
+	width:10%;
+}
+
+.active{
+    background-color: lightblue;
+    font-weight: bold;
+    border: 3px solid navy;
+}
+h1{
+	font-size: 30px;
+	font-weight: bold;
+	color: #5f5f5f;
+	font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+
+ img{
+    margin: 20px;
+	padding: 10px;
+    border: 5px solid green;
+    /* width: 325px; */
+	border-radius: 10px;
+}
+
+img:hover{
+	filter: sepia();
+	border:dashed;
+}
+
+.gallery{
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 50px;
+	justify-content: center;
+}
+
+.urbangallery{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.gallery .urbangallery img:hover{
+    filter: grayscale();
+    border: dashed;
+
+}
+
+footer{
+	margin: 15px;
+	padding: 20px;
+	position: relative;
+	bottom: 0;
+	right: 0;
+}
+.gallery .urbangallery  img:nth-child(3n){
+	border: purple solid 5px;
+}
+
+.gallery .urbangallery  img:nth-child(3n):hover{
+	filter: sepia();
+	border: dashed;
+}
+
+img#me{
+    animation: me 5s 1;
+}
+
+img{
+	box-shadow: 8px 8px 8px #777777;
+
+}
+
+.skip{  position: absolute;
+	left: -200px;
+}
+
+.skip:focus{
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+  .flip-card {
+	display: flex;
+	background-color: transparent;
+	border: 1px solid #f1f1f1;
+	padding: 25px;
+	margin: 30px;
+}
+
+  .flip-card-inner {
+	text-align: center;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner{
+	transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+	background-color: black;
+	color: white;
+	transform: rotateY(180deg);
+  }
+
+  .flip-card-back h1{
+	  color: white;
+  }
+
+
+
+  .flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+@keyframes me {
+    from {width: 10px; opacity: 0;}
+    to {width: 325px; opacity: 1; }
+}
+
+
+
+
+@media screen and (prefers-reduced-motion: reduce){
+
+    img#me{
+        animation: inherit;
+    }
+
+	.flip-card{
+		display: none;
+	  }
+
+}
+@media screen and (min-width: 800px){
+
+	nav li{
+		padding: 5px;
+		margin: 4px;
+		display: flex;
+		justify-content: center;
+		width:10%;
+	}
+
+	.gallery{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		row-gap: 10px;
+	}
+
+	.urbangallery{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+
+@media screen and (min-width: 1200px){
+
+
+	nav li{
+		padding: 10px;
+		margin: 15px;
+		display: inline-block;
+		justify-content: center;
+		width:10%;
+	}
+
+	.gallery{
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		row-gap: 30px;
+		column-gap: 10px;
+	}
+
+	.urbangallery{
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+}
